@@ -1,13 +1,27 @@
-# Sample Hardhat Project
+# DAOs Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+First you should
 ```
+yarn 
+yarn install
+```
+
+To deploy the contract on a local node
+```
+yarn hardhat node
+```
+
+Script to interact with the DAOs
+1. Propose a new proposal
+```
+yarn hardhat run scripts/propose.js --network localhost
+```
+2. Vote
+```
+yarn hardhat run scripts/votes.js --network localhost
+```
+3. Queue And Execute
+```
+yarn hardhat run scripts/queue-and-execute.js --network localhost
+```
+
